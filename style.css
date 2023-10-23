@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+    --box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    --box-shadow-hover: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    --transition: ease .4s;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgba(255, 237, 215, 0.686);
+}
+
+/* header start */
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: var(--text-color);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    z-index: 1000;
+    transition: ease .4s;
+}
+
+.logo {
+    color: var(--bg-color);
+    font-size: 40px;
+    word-wrap: normal;
+    padding: 20px 0px;
+}
+
+header a {
+    color: var(--bg-color);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 3px;
+    transition: ease .5s;
+}
+
+/* header end */
+section {
+    padding: 35px 20%;
+}
+
+/* section home start */
+.home {
+    background: url(/images/background1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.home h1 {
+    color: var(--bg-color);
+    font-size: 70px;
+    padding: 0 20%;
+    padding-top: 150px;
+}
+
+.home p {
+    font-size: 20px;
+    line-height: 35px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 0 30%;
+}
+
+.home button {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 15px 45px;
+    cursor: pointer;
+    background-color: #C8AE7D;
+}
+
+.home button:hover {
+    opacity: 0.8;
+}
+
+/* section home end */
+
+/* section tour packages start */
+.package-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tour-text {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.tour-text h2 {
+    font-size: 35px;
+}
+
+.tour-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tour-item {
+    border: 1px solid #f0eded;
+    gap: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.tour-item-img img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.tour-item-img img:hover {
+    transform: scale(1.05);
+    transition: var(--transition);
+}
+
+.tour-knowledge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tour-name h4 {
+    color: var(--text-color);
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+/* section tour packages end */
+
+/* section Populer places start */
+section.destination {
+    margin-top: 100px;
+}
+
+section.destination .title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.destination-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.col-content {
+    width: 350px;
+    position: relative;
+    cursor: pointer;
+}
+
+.col-content img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.col-content h5 {
+    position: absolute;
+    bottom: 60px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--bg-color);
+    left: 15px;
+}
+
+.col-content p {
+    position: absolute;
+    bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--bg-color);
+    left: 15px;
+    letter-spacing: 3px;
+}
+
+.col-content img:hover {
+    transform: scale(1.05);
+    transition: var(--transition);
+}
+
+/* section Populer places end */
+
+/* section trip type start */
+.text {
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 35px;
+}
+
+.row-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.row-item {
+    cursor: pointer;
+    border: 2px solid #37321f;
+    border-radius: 15px;
+    gap: 20px;
+    padding: 30px 15px;
+}
+
+.row-item-icon {
+    padding: 10px;
+}
+
+.row-item:nth-child(3) .row-item-icon {
+    padding: 10px 0px;
+    padding-left: 9px;
+}
+
+.row-item:nth-child(4) .row-item-icon {
+    padding: 10px;
+    padding-left: 13px;
+}
+
+.row-item-icon i {
+    font-size: 70px;
+    color: #765827;
+}
+
+.row-item h4 {
+    text-align: center;
+    color: var(--text-color);
+    margin: 8px 0;
+}
+
+/* section trip type end */
+
+/* section contact start */
+#contact {
+    background-color: #765827;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.list {
+    width: 200px;
+}
+
+.list h4 {
+    font-size: 20px;
+    color: var(--bg-color);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.list h4::before {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: var(--bg-color);
+    position: absolute;
+    bottom: 0;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.list h4:hover::before {
+    width: 60%;
+}
+
+.list ul li a {
+    color: #f0eded;
+    font-size: var(--p-font);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.list ul li a:hover {
+    color: var(--bg-color);
+    transform: translateX(20px);
+    transition: var(--transition);
+}
+
+
+.icons a {
+    background-color: var(--bg-color);
+    color: #765827;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: var(--transition);
+
+}
+
+/* section contact end */
+
+@media (max-width: 767px){
+    .logo{
+        margin: 0 auto;
+    }
+    header a{
+       display: none;
+    }
+    .home h1{
+        font-size: 50px;
+        margin-bottom: 35px;
+    }
+    .home p{
+        display: none;
+    }
+    .tour-items {
+        flex-wrap: wrap;
+        gap: 95px;
+    }
+    .list{
+       margin: 0 30%;
+       text-align: center;
+    }
+    .icons a{
+        margin: 8px;
+    }
+}
